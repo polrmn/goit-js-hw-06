@@ -5,15 +5,13 @@ const valueSpan = document.querySelector('#value');
 
 const countSub = () => {
     counterValue -= 1;
-    console.log(counterValue);
+    valueSpan.innerHTML = `${counterValue}`;
 }
 
 const countAdd = () => {
     counterValue += 1;
-    console.log(counterValue);
+    valueSpan.innerHTML = `${counterValue}`;
 }
 
 decButton.addEventListener('click', countSub);
 incButton.addEventListener('click', countAdd);
-
-valueSpan.textContent = `${counterValue}`;
