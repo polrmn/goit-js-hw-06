@@ -1,14 +1,10 @@
 const formRef = document.querySelector('.login-form');
 
-// console.log(formRef.elements);
-
 formRef.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
 
     event.preventDefault();
-
-
 
     if (event.currentTarget.elements.email.value !== '' && event.currentTarget.password.value !== '') {
         
